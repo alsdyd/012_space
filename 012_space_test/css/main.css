@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background: #fec353;
+}
+
+.character_box{
+	
+}
+
+.character{
+	width: 531px;
+	height: 722px;
+	background: url(../img/character_01.png) no-repeat;	
+	background-size: cover;
+	
+	
+	/* div 중앙정렬 */
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+	
+  
+
+	
+	transition: all 3s ease-out;
+	
+	animation: dung 3s infinite;
+	
+}
+
+
+
+
+@media(max-width:599px){
+
+	.character{
+	width: 265.5px;
+	height: 361px;
+	}	
+}
+
+@media(max-width:399px){
+
+	.character{
+	width: 151px;
+	height: 206px;
+	}	
+}
+
+
+
+
+
+
+
+@keyframes dung{
+	0%{
+		transform: translateX(-50%) translateY(-50%);
+	}
+	
+	50%{
+		transform: translateX(-50%) translateY(-55%);
+	}
+	
+	100%{
+		transform: translateX(-50%) translateY(-50%);
+	}
+}
+
+
