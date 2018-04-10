@@ -1,23 +1,77 @@
 @charset "utf-8";
 /* CSS Document */
 
+html,body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
 body{
 	background: #fec353;	
 	overflow: hidden;
+	padding: 20px;
 }
+
+
+.out-line{
+  position: relative;
+  top:50%;
+  left:50%;
+	transform:translate(-50%, -50%);
+  
+
+	width: 100%;
+	height: 100%;
+	background: #f4816f;
+	border: 4px solid #231f20;	
+}
+
+
 
 .character_box{
 	
 }
 
-.character{
-	width: 531px;
-	height: 722px;
-	background: url(../img/character_01.png) no-repeat;	
+
+
+
+
+.room-shadow{
+	
+	width: 119px;
+	height: 45px;
+	background: url(../img/room_shadow_01.png) no-repeat;
+	background-size: cover;
+	opacity: 0.5;
+	
+  position:absolute;
+  top:85%;
+  left:50%;
+  transform:translate(-50%, -50%);
+	
+	
+	transition: all 1s ease-out;
+	
+	animation: shadow-op 3s infinite;
+}
+
+
+
+
+.character
+{
+	width: 626px;
+	height: 622px;
+	background: url(../img/room_01.png) no-repeat;	
 	background-size: cover;
 	
-	
-	/* div 중앙정렬 */
+
+
+
+	 /* div 중앙정렬 */
   position:absolute;
   top:50%;
   left:50%;
@@ -26,7 +80,7 @@ body{
   
 
 	
-	transition: all 3s ease-out;
+	transition: all 1s ease-out;
 	
 	animation: dung 3s infinite;
 	
@@ -35,29 +89,68 @@ body{
 
 
 
-@media(max-width:599px){
+
+
+
+
+
+@media(max-width:899px){
 
 	.character{
-	width: 265.5px;
-	height: 361px;
-	}	
+	width: 313px;
+	height: 311px;
+	}
+	
+	
+	.room-shadow{
+	width: 80px;
+	height: 30px;
+  top:75%;
+	}
+	
 }
 
 @media(max-width:399px){
 
 	.character{
-	width: 151px;
-	height: 206px;
+	width: 156.5px;
+	height: 155.5px;
 	}	
+	
+		.room-shadow{
+	width: 40px;
+	height: 15px;
+  top:65%;
+	}
+	
 }
+
+
+@media(max-height:900px){
+	
+	
+	.room-shadow{
+  top:88%;
+	}
+	
+}
+
+
 
 
 @media(max-height:700px){
 	
 	.character{
-	width: 151px;
-	height: 206px;
-	}	
+	width: 156.5px;
+	height: 155.5px;
+	}
+	
+	.room-shadow{
+	width: 40px;
+	height: 15px;
+  top:65%;
+	}
+	
 }
 
 
@@ -77,5 +170,31 @@ body{
 		transform: translateX(-50%) translateY(-50%);
 	}
 }
+
+
+
+@keyframes shadow-op{
+	0%{
+		opacity: 0.5;
+			
+	}
+	
+	50%{
+		opacity: 0.2;
+		transform: translateX(-50%) translateY(-50%) scaleX(0.8);
+		
+	}
+	
+	
+	100%{
+		opacity: 0.5;
+	}
+}
+
+
+
+
+
+
 
 
