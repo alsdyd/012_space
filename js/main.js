@@ -14,10 +14,13 @@ $(function(){
 
 
 
-		$('.character').click(function () {
+		$('.switch-btn').click(function () {
 
 			$('.out-line01').toggleClass('switch-off');
+			$('.switch-btn').toggleClass('switch-color');
+			
 		});
+
 
 
 
