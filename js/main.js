@@ -24,6 +24,8 @@ $(window).ready(function(){
 			$('.switch-btn').toggleClass('switch-color');
 			$('.star').toggleClass('blind');
 			$('.address').toggleClass('address-light');
+			$('.character-012').toggleClass('character-012-ani');
+			$('.character-012-shadow').toggleClass('character-012-shadow-ani');
 
 		});
 

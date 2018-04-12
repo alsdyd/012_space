@@ -198,8 +198,11 @@ body{
 
 	transition: all 1s ease-out;
 
-	animation: dung02 4s infinite;
 
+}
+
+.character-012-ani{
+	animation: dung02 4s infinite;
 }
 
 
@@ -228,6 +231,23 @@ body{
 	background-size: cover;
 	opacity: 0.5;
 
+
+	position:absolute;
+	top:68%;
+	left:50%;
+	transform:translate(-50%, -50%);
+
+	transition: all 1s ease-out;
+
+}
+
+.character-012-shadow-ani{
+	width: 60px;
+	height: 22px;
+	background: url(../img/room_shadow_01.png) no-repeat;
+	background-size: cover;
+	opacity: 0.5;
+
 	position:absolute;
 	top:80%;
 	left:50%;
@@ -237,6 +257,13 @@ body{
 
 	animation: shadow-op02 4s infinite;
 }
+
+
+
+
+
+
+
 
 @keyframes shadow-op02{
 	0%{
@@ -387,6 +414,21 @@ body{
 
 
 
+	.character-012-shadow{
+		width: 60px;
+		height: 22px;
+		top:83%;
+
+	}
+
+
+
+	.character-012-shadow-ani{
+		width: 60px;
+		height: 22px;
+		top: 85%;
+	}
+
 
 
 
@@ -485,8 +527,15 @@ body{
 	.character-012-shadow {
 		width: 30px;
 		height: 11px;
+		top: 83%;
+	}
+
+	.character-012-shadow-ani{
+		width: 30px;
+		height: 11px;
 		top: 85%;
-	}a
+	}
+
 
 
 }
