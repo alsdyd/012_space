@@ -23,6 +23,7 @@ $(window).ready(function(){
 			$('.out-line01').toggleClass('switch-off');
 			$('.switch-btn').toggleClass('switch-color');
 			$('.star').toggleClass('blind');
+			$('.address').toggleClass('address-light');
 
 		});
 

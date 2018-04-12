@@ -131,7 +131,6 @@ body{
 		
 	}
 	
-	
 	100%{
 		opacity: 0.5;
 	}
@@ -159,12 +158,102 @@ body{
 
 
 
+.address{
+	color: #2A0066;
+	font-size: 14px;
+
+	position: absolute;
+	top:95%;
+	left:50%;
+	transform:translate(-50%, -50%);
+}
+
+
+.address-light{
+	text-shadow: 0px 0px 20px #fff;
+	color: rgba(255, 255, 255, 0.8)
+}
+
+
 
 
 
 .switch-off {
 	background-color: #8176C9;
 }
+
+
+
+.character-012{
+	width: 132px;
+	height: 180px;
+	background: url(../img/character_01.png);
+	background-size: cover;
+
+	position:absolute;
+	top:55%;
+	left:50%;
+	transform:translate(-50%, -50%);
+
+
+	transition: all 1s ease-out;
+
+	animation: dung02 4s infinite;
+
+}
+
+
+@keyframes dung02{
+	0%{
+		transform: translateX(-50%) translateY(-50%) rotate(70deg);
+	}
+
+	50%{
+		transform: translateX(-50%) translateY(-60%) rotate(75deg);
+	}
+
+	100%{
+		transform: translateX(-50%) translateY(-50%) rotate(70deg);
+	}
+}
+
+
+
+
+
+.character-012-shadow{
+	width: 60px;
+	height: 22px;
+	background: url(../img/room_shadow_01.png) no-repeat;
+	background-size: cover;
+	opacity: 0.5;
+
+	position:absolute;
+	top:80%;
+	left:50%;
+	transform:translate(-50%, -50%);
+
+	transition: all 1s ease-out;
+
+	animation: shadow-op02 4s infinite;
+}
+
+@keyframes shadow-op02{
+	0%{
+		opacity: 0.2;
+	}
+
+	50%{
+		opacity: 0.1;
+		transform: translateX(-50%) translateY(-50%) scaleX(0.8);
+	}
+
+	100%{
+		opacity: 0.2;
+	}
+}
+
+
 
 
 
@@ -319,6 +408,19 @@ body{
 	}
 
 
+	.character-012 {
+		width: 66px;
+		height: 90px;
+	}
+
+	.character-012-shadow {
+		width: 30px;
+		height: 11px;
+		top: 85%;
+	}
+
+
+
 
 	#star-1 {
 		transform: scale(1.2);
@@ -354,6 +456,7 @@ body{
 		top:88%;
 	}
 
+
 }
 
 
@@ -372,7 +475,23 @@ body{
 		top:65%;
 	}
 
+
+
+	.character-012 {
+		width: 66px;
+		height: 90px;
+	}
+
+	.character-012-shadow {
+		width: 30px;
+		height: 11px;
+		top: 85%;
+	}a
+
+
 }
+
+
 
 
 
